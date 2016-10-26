@@ -3,7 +3,7 @@
 # Alexander Ecker
 # 2015-05-09
 
-FROM bethgelab/jupyter-deeplearning:cuda7.5-cudnn5
+FROM bethgelab/jupyter-deeplearning-x:cuda8.0-cudnn5
 MAINTAINER Alexander Ecker "alexander.ecker@uni-tuebingen.de"
 
 #install datajoint and dependencies
