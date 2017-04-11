@@ -31,6 +31,18 @@ RUN pip3 install ipywidgets
 RUN pip3 install mpld3 sh yapf imageio
 
 # Older version of matplotlib, which works better with Seaborn
-RUN pip3 uninstall -y matplotlib
-RUN pip3 install matplotlib==1.5
+#RUN pip3 uninstall -y matplotlib
+#RUN pip3 install matplotlib==1.5
+
+RUN pip3 install tqdm
+
+RUN pip3 install python-dateutil
+
+RUN cd /tmp && \
+    git clone https://github.com/pdollar/coco.git && \
+    cd coco/PythonAPI && \
+    python3 setup.py build_ext install && \
+    rm -rf /tmp/coco
+
+RUN apt-get install -y locate && updatedb
 
