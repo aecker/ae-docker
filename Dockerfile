@@ -54,4 +54,5 @@ RUN pip3 install tensorflow-gpu==1.2.0rc0
 RUN apt-get update && \
     apt-get install ttf-bitstream-vera
 
+RUN apt-get install python3-tk
 
