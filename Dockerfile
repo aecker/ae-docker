@@ -1,9 +1,10 @@
 # Alex' GPU tools
 #
 # Alexander Ecker
-# 2015-05-09
+# Original: 2015-05-09
+# Last update: 2017-12-21
 
-FROM bethgelab/deeplearning:cuda8.0-cudnn5
+FROM bethgelab/deeplearning:cuda8.0-cudnn6
 MAINTAINER Alexander Ecker "alexander.ecker@uni-tuebingen.de"
 
 #install datajoint and dependencies
@@ -50,7 +51,7 @@ RUN apt-get install -y locate && updatedb
 
 RUN pip3 install seaborn
 
-RUN pip3 install tensorflow-gpu==1.2.0rc0
+#RUN pip3 install tensorflow-gpu==1.2.0rc0
 
 RUN apt-get update && \
     apt-get install ttf-bitstream-vera
