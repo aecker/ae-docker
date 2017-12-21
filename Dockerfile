@@ -9,7 +9,7 @@ MAINTAINER Alexander Ecker "alexander.ecker@uni-tuebingen.de"
 
 #install datajoint and dependencies
 RUN pip3 install --upgrade pip
-RUN pip3 install pymysql pandas networkx
+RUN pip3 install pymysql==0.7.11 pandas networkx
 #RUN pip3 install git+https://github.com/datajoint/datajoint-python
 RUN pip3 install datajoint
 
