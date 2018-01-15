@@ -58,3 +58,7 @@ RUN apt-get update && \
 
 RUN apt-get install python3-tk
 
+RUN pip3 install h5py
+
+RUN apt-get install graphviz
+
